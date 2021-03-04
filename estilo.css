@@ -1,0 +1,423 @@
+* {margin:0; padding:0;}
+
+body{background:#fffffA;}
+
+header {
+	width:100%;
+	overflow: hidden;
+	background:#252932;
+	margin-bottom:20px;
+	/* position: fixed; */
+	z-index: 100;
+}
+
+.wrapper {
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+	
+}
+
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	font-family:"Nexa";
+	line-height:200px;
+	float:left;
+}
+
+header nav {
+	float:right;
+	line-height:200px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	padding:10px 20px;
+	text-decoration:none;
+	line-height:normal;
+	font-size:20px;
+	font-family:"Nexa";
+	font-weight:bold;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+header nav a:hover {
+	background:#F56F3A;
+	border-radius:50px;
+}
+
+.header2 {
+	position: fixed;
+	height:100px;
+
+}
+
+.header2 .logo {
+	line-height:100px;
+	font-size:30px;
+}
+
+.header2 nav {
+	line-height:100px;
+}
+
+.contenido p {
+	margin-bottom:1em;
+}
+
+.contenido h3 {
+	display:block;
+	padding:10px ;
+	margin: 20px;
+	color:#fff;
+	text-align:center;
+	background:#F56F3A;
+	margin-bottom:1em;
+}
+
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		width:100%;
+		text-align:center;
+		line-height:100px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo{
+		line-height:50px;
+	}
+
+	.header2 nav {
+		line-height:50px;
+	}
+}
+/* estlilo bar de redes sociales */
+html {
+	font-size: 16px;
+}
+
+.social-bar {
+	position: fixed;
+	/* right: 0;  */
+	left: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook2 {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-whatsapp {
+	background: #15d897;
+}
+
+.icon-instagram {
+	background: #8a3ab9;
+}
+
+.icon:first-child {
+	border-radius: 0 1rem  0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 1rem  0;
+}
+
+.icon:hover {
+	padding-right:  3rem ;
+	border-radius: 0 1rem 1rem 0;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+/* footer */
+footer {
+    
+    padding: 1%;
+    background:#252932;
+    color: white;
+}
+footer p{
+	text-align: center;
+}
+/*PEN STYLES*/
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	background: #f1f1f1;
+	/* margin: 2rem; */
+  }
+  
+  .blog-card {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem auto;
+	box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1.6%;
+	background: #fff;
+	line-height: 1.4;
+	font-family: sans-serif;
+	overflow: hidden;
+	z-index: 0;
+  }
+  .blog-card a {
+	color: inherit;
+  }
+  .blog-card a:hover {
+	color: #252932;
+  }
+  .blog-card:hover .photo {
+	transform: scale(1.1);
+  }
+  .blog-card .meta {
+	position: relative;
+	z-index: 0;
+	height: 200px;
+  }
+  .blog-card .photo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	transition: transform 0.2s;
+  }
+  .blog-card .details,
+  .blog-card .details ul {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+  }
+  .blog-card .details {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -100%;
+	margin: auto;
+	transition: left 0.2s;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 10px;
+	width: 100%;
+	font-size: 0.9rem;
+  }
+  .blog-card .details a {
+	text-decoration: dotted underline;
+  }
+  .blog-card .details ul li {
+	display: inline-block;
+  }
+  .blog-card .details .author:before {
+	font-family: FontAwesome;
+	margin-right: 10px;
+	content: "";
+  }
+  .blog-card .details .date:before {
+	font-family: FontAwesome;
+	margin-right: 10px;
+	content: "";
+  }
+  .blog-card .details .tags ul:before {
+	font-family: FontAwesome;
+	content: "";
+	margin-right: 10px;
+  }
+  .blog-card .details .tags li {
+	margin-right: 2px;
+  }
+  .blog-card .details .tags li:first-child {
+	margin-left: -4px;
+  }
+  .blog-card .description {
+	padding: 1rem;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+  }
+  .blog-card .description h1,
+  .blog-card .description h2 {
+	font-family: Poppins, sans-serif;
+  }
+  .blog-card .description h1 {
+	line-height: 1;
+	margin: 0;
+	font-size: 1.7rem;
+  }
+  .blog-card .description h2 {
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #a2a2a2;
+	margin-top: 5px;
+  }
+  .blog-card p {
+	position: relative;
+	margin: 1rem 0 0;
+  }
+  .blog-card p:first-of-type {
+	margin-top: 1.25rem;
+  }
+  .blog-card p:first-of-type:before {
+	content: "";
+	position: absolute;
+	height: 5px;
+	background: #252932;
+	width: 35px;
+	top: -0.75rem;
+  }
+  .blog-card:hover .details {
+	left: 0%;
+  }
+  @media (min-width: 640px) {
+	.blog-card {
+	  flex-direction: row;
+	}
+	.blog-card .meta {
+	  flex-basis: 40%;
+	  height: auto;
+	}
+	.blog-card .description {
+	  flex-basis: 60%;
+	}
+	.blog-card .description:before {
+	  transform: skewX(-3deg);
+	  content: "";
+	  background: #fff;
+	  width: 30px;
+	  position: absolute;
+	  left: -10px;
+	  top: 0;
+	  bottom: 0;
+	  z-index: -1;
+	}
+	.blog-card.alt {
+	  flex-direction: row-reverse;
+	}
+	.blog-card.alt .description:before {
+	  left: inherit;
+	  right: -10px;
+	  transform: skew(3deg);
+	}
+	.blog-card.alt .details {
+	  padding-left: 25px;
+	}
+  }
+  
+  .content {
+	position: relative;
+  }
+  .content .collapse:not(.show) {
+	height: 100px !important;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+  }
+  .content .collapse:not(.show):after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  }
+  .content .collapse.show {
+	margin-bottom: 21px;
+  }
+  
+  .content .collapsing {
+	min-height: 100px !important;
+  }
+  
+  .content a.collapsed:after {
+	content: "+ Read More";
+  }
+  
+  .content a:not(.collapsed):after {
+	padding-top: 21px;
+	content: "- Read Less";
+  }
+  
+  /*
+  * These styles for text decoration. The demo will be work without it
+  */
+  .link {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+  }
+  
+  /*
+  * These styles creates the underlining of link
+  */
+  .link {
+	position: relative;
+	z-index: 1;
+	display: inline-flex;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+  }
+  
+  .link::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #fed330 25%, rgba(0, 0, 0, 0) 40%);
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	z-index: -1;
+	will-change: width;
+	transform: rotate(-2deg);
+	transform-origin: left bottom;
+  }
+  
+  .link:hover::before {
+	width: 0;
+  }
+  
+  /*
+  * animation styles
+  */
+  .link::before {
+	transition: width 0.1s ease-out;
+  }
+  
+  .link:hover::before {
+	transition-duration: 0.15s;
+  }
